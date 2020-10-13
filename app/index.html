@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="lib/dist/FileSaver.min.js"></script>
+    <script src="js/save.js"></script>
+    <meta charset="UTF-8">
+    <title>UltraTextIDE</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <h1>UltraTextIDE</h1>
+    <input id="in">
+    <textarea id="code" name="code" rows="20" cols="92">
+// Created by UltraTextIDE
+</textarea>
+<button onclick="save(document.querySelector('#in').textContent, document.querySelector('#code').textContent)">Save</button>
+  </body>
+</html>
