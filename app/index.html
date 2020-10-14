@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
+  <div id="left">
+    <h1 id="menu-tit">Menu</h1>
+  </div>
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="lib/dist/FileSaver.min.js"></script>
     <script src="js/save.js"></script>
     <meta charset="UTF-8">
     <title>UltraTextIDE</title>
-    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
   </head>
-  <body>
-    <h1>UltraTextIDE</h1>
+  <header>
     <input id="in">
+    <button onclick="save()" id="save">Save</button>
+    <a href="#" id="bars-solid">
+      <img src="img/bars-solid.svg" height="30px" width="30px" id="b">
+    </a>
+  </header>
+  <body>
     <textarea id="code" name="code" rows="20" cols="92">
 // Created by UltraTextIDE
 </textarea>
-<button onclick="save(document.querySelector('#in').textContent, document.querySelector('#code').textContent)">Save</button>
   </body>
 </html>

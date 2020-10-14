@@ -1,0 +1,58 @@
+:root {
+    --divwidth: 5%
+}
+
+#left{
+    width: var(--divwidth);
+    background-color: indigo;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#code {
+    width: 98%;
+    height: 800px;
+    margin-left: 1em;
+    color: indigo;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+#in {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    height: 25px;
+    width: 80px;
+}
+
+#save{
+    padding:0.5em;
+    margin-left: 0.5em;
+    height: 30px;
+    width: 60px;
+}
+
+#left:hover{
+    --divwidth: 25%;
+    opacity: 100;
+}
+
+#menu-tit{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+#bars-solid {
+    padding-top: 1em;
+    margin-left: 0.5em;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+#bars-solid:active {
+    --divwidth: 25%;
+}
