@@ -1,5 +1,6 @@
 :root {
-    --divwidth: 5%
+    --divwidth: 5%;
+    --opacity: 100;
 }
 
 #left{
@@ -12,6 +13,7 @@
 }
 
 #code {
+    margin-top: 55px;
     width: 98%;
     height: 800px;
     margin-left: 1em;
@@ -36,6 +38,7 @@
 
 #left:hover{
     --divwidth: 25%;
+    --opacity: 0;
     opacity: 100;
 }
 
@@ -43,16 +46,18 @@
     text-align: center;
     color: white;
     font-size: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 #bars-solid {
     padding-top: 1em;
     margin-left: 0.5em;
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 0;
 }
 
-#bars-solid:active {
-    --divwidth: 25%;
+#pe {
+    position: fixed;
+    right: 30px;
 }
