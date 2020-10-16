@@ -1,14 +1,15 @@
 :root {
     --divwidth: 5%;
-    --opacity: 100;
+    --opacity: 0;
+    background-color: #EBFF00;
 }
 
 #left{
-    width: var(--divwidth);
-    background-color: indigo;
+    width: 5%;
+    background-color: #0500FF;
     height: 100%;
     position: absolute;
-    opacity: 0;
+    opacity: 100;
     transition: all 1s;
 }
 
@@ -17,8 +18,10 @@
     width: 98%;
     height: 800px;
     margin-left: 1em;
-    color: indigo;
+    color: white;
     font-family: Consolas, "Courier New", monospace;
+    background-color: #FF0000;
+    
 }
 
 #in {
@@ -37,17 +40,10 @@
 }
 
 #left:hover{
-    --divwidth: 25%;
-    --opacity: 0;
-    opacity: 100;
+    --divwidth: 500%;
+    --opacity: 100;
 }
 
-#menu-tit{
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-family: 'Nanum Gothic', sans-serif;
-}
 
 #bars-solid {
     padding-top: 1em;
@@ -60,4 +56,29 @@
 #pe {
     position: fixed;
     right: 30px;
+}
+
+#menu{
+    padding-top: 1em;
+    position: fixed;
+}
+
+#menu_complete{
+    height: 100%;
+    position: absolute;
+    width: var(--divwidth);
+    opacity: var(--opacity);
+    transition: all 1s;
+}
+
+#real{
+    width: 100%;
+    height: 100%;
+    margin-left: calc(20% - 1px);
+    background-color: #2623CC;
+}
+
+.fix{
+    position: absolute;
+    right: 57px;
 }
