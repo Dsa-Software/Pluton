@@ -1,6 +1,7 @@
 :root {
     --divwidth: 5%;
     --opacity: 0;
+    --unpacity: 100;
     background-color: #EBFF00;
 }
 
@@ -15,8 +16,8 @@
 
 #code {
     margin-top: 55px;
-    width: 98%;
-    height: 800px;
+    width: 94.5%;
+    height: 853px;
     margin-left: 1em;
     color: white;
     font-family: Consolas, "Courier New", monospace;
@@ -42,6 +43,7 @@
 #left:hover{
     --divwidth: 500%;
     --opacity: 100;
+    --unpacity: 0;
 }
 
 
@@ -82,3 +84,28 @@
     position: absolute;
     right: 57px;
 }
+
+textarea{
+    border: 4px solid #AB2424;
+}
+
+.plus {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 18%;
+    top: 10px;
+    transition: all 0.5s;
+}
+
+.plus:hover{
+    padding: 0.2em;
+    background-color: red;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#file {
+    opacity: var(--unpacity);
+}
+

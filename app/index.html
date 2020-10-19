@@ -3,7 +3,7 @@
   <div id="left">
     <script src="js/clear.js"></script>
     <p align="center" class="fix">
-      <img class="menu" id="menu" src="https://lh3.googleusercontent.com/proxy/4FLEanoilSKVUEI-_zJhlwg3H9vSonyQAiu-yABF2NDD_qCxJE9C74qY6g1AKvwCmojMaUOlkh3J6qc6FZ_pspgmp6qDeKTFVUdwDRKMw6U8rBE5MFd4" width="40px" height="40px">
+      <img class="menu" id="menu" src="img/menu.png" width="40px" height="40px">
     </p>
   <div id="menu_complete">
     <div id="real">
@@ -12,7 +12,7 @@
         <img src="https://github.com/Dsa-Software/Pluton/raw/main/1602857643660.png?raw=true" height="130px" width="250px">
       </p>
       <p align="center" style="font-family: 'Open Sans'; color: white; font-size: 20px;">
-        Copright© 2020 Dsa Software Fundation
+        Copright© 2020 Dsa Software
       </p>
     </div>
   </div>
@@ -29,21 +29,28 @@
     <script type="text/javascript" src="lib/dist/FileSaver.min.js"></script>
     <script src="js/save.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/file-tab.js"></script>
     <meta charset="UTF-8">
-    <title>Pluton</title>
+    <title>UltraTextIDE</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
   </head>
   <header>
+    <div id="file" style="margin-left: 6%; padding-top: 1em; background-color: #FF0000; width: 10%; position: fixed; padding-bottom: 0.55em; border-top: 4px solid #AB2424; border-left: 4px solid #AB2424; border-right: 4px solid #AB2424; border-bottom: 1px solid #FF0000;">
+      <p id="file-name" align="center" style="font-size: 30px; color: white; font-family: Open Sans;">Untitled</p>
+    </div>
+      <img class="plus" src="img/plus-solid.svg">
     <p id="pe">
       <input id="in">
-      <button onclick="save()" id="save">Save</button>
+      <button onclick="save(); tab_name()" id="save">Save</button>
     </p>
   </header>
   <body>
     <div class = area>
-      <textarea id="code" name="code" rows="17" cols="86" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off">
-
-      </textarea>
-    </div>
+      <p align="right">
+    <textarea id="code" name="code" rows="20" cols="92" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off">
+//Created by Pluton
+</textarea>
+    </p>
+  </div>
   </body>
 </html>
