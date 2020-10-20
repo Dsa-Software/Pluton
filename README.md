@@ -6,13 +6,10 @@
   <br>
   <img src="https://img.shields.io/github/repo-size/Dsa-Software/Pluton">
   <img src="https://img.shields.io/github/license/Dsa-Software/Pluton">
+  <img src="https://img.shields.io/github/languages/top/Dsa-Software/Pluton">
+  <img src="https://img.shields.io/github/languages/count/Dsa-Software/Pluton">
+  <img src="https://img.shields.io/github/commit-activity/m/Dsa-Software/Pluton">
 </p>
-
-
-
-
-
-
 
 # Setup
 
