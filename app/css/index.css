@@ -41,9 +41,9 @@
 }
 
 #left:hover{
+    --unpacity: 0;
     --divwidth: 500%;
     --opacity: 100;
-    --unpacity: 0;
 }
 
 
